@@ -37,7 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="index.html">Changelog</a></li>
             <li class="nav-item"><a class="nav-link" href="prvni-nastaveni.html">První nastavení</a></li>
             <li class="nav-item"><a class="nav-link active" href="prikazy.html">Seznam příkazů</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Discord</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="index.html">Discord</a></li> -->
             </li>
           </ul>
         </div>
@@ -95,7 +95,7 @@
             <tbody>
               <tr>
                 <td class="text-center"><code>.help [příkaz]</code></td>
-                <td class="text-center">Zobrazí základní nápovědu k Corgimu.</td>
+                <td class="text-center">Zobrazí základní nápovědu.</td>
                 <td class="text-center">.help<br>.help mcstatus</td>
                 <td></td>
               </tr>
@@ -235,7 +235,7 @@
               </tr>
               <tr>
                 <td class="text-center"><code>.archive [číslo]</code></td>
-                <td class="text-center">Zaarchivuje požadovaný počet zpráv (max 100) a odešle je v souboru.</td>
+                <td class="text-center">Zaarchivuje požadovaný počet zpráv (max. 100) a odešle je v souboru.</td>
                 <td class="text-center">.archive 20</td>
                 <td></td>
               </tr>
@@ -249,6 +249,24 @@
                 <td class="text-center"><code>.giveaway [s] [výhra]</code></td>
                 <td class="text-center">Spustí v požadovaném channelu Giveaway. Ke konci se automaticky vyhodnotí. Lze vytvořit i Giveaway bez výhry.</td>
                 <td class="text-center">.giveway 1800 Ponožky</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.kick @user [@user]</code></td>
+                <td class="text-center">Vyhodí zvoleného uživatele z serveru. Maximálně lze vyhodit najednou až 20 uživatelů.</td>
+                <td class="text-center">.kick @MrWakeCZ</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.ban @user [@user]</code></td>
+                <td class="text-center">Zabanuje zvoleného uživatele. Stejně jako u kicku lze zabanovat až 20 uživatelů najednou.</td>
+                <td class="text-center">.ban @MrWakeCZ</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.roleinfo [ID]/[Název]</code></td>
+                <td class="text-center">Zobrazí informace o požadované roli - práva, řazení, seskupování atd.</td>
+                <td class="text-center">.roleinfo admin</td>
                 <td></td>
               </tr>
             </tbody>
@@ -271,6 +289,12 @@
                 <td class="text-center"><code>.say [text]</code></td>
                 <td class="text-center">Napíše zprávu jako Corgi.</td>
                 <td class="text-center">.say Ahoj</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.prefix [code]</code></td>
+                <td class="text-center">Nastavení vlastního prefixu pro daný server.</td>
+                <td class="text-center">.prefix ?</td>
                 <td></td>
               </tr>
             </tbody>
