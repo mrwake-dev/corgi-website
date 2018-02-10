@@ -103,13 +103,13 @@
                 <td class="text-center"><code>.invite</code></td>
                 <td class="text-center">Zobrazí přímý odkaz na pozvání bota na tvůj Discord server.</td>
                 <td class="text-center">.invite</td>
-                <td></td>
+                <td class="text-center">.pozvat</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.about</code></td>
                 <td class="text-center">Zobrazení základních informací a odkazů na Corgiho.</td>
                 <td class="text-center">.about</td>
-                <td></td>
+                <td class="text-center">.info, .binfo</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.ping</code></td>
@@ -119,7 +119,7 @@
               </tr>
               <tr>
                 <td class="text-center"><code>.uptime</code></td>
-                <td class="text-center">Zobrazí aktuální čas od spuštění Corgiho.</td>
+                <td class="text-center">Zobrazí seznam posledních změn v Corgim.</td>
                 <td class="text-center">.uptime</td>
                 <td></td>
               </tr>
@@ -139,31 +139,49 @@
                 <td class="text-center"><code>.mcstatus</code></td>
                 <td class="text-center">Zobrazí aktuální stav Mojang serverů pro Minecraft servery.</td>
                 <td class="text-center">.mcstatus</td>
-                <td></td>
+                <td class="text-center">.mojang, .mcs</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.emote [emote|id]</code></td>
                 <td class="text-center">Zobrazí informace o požadovaném Emote.</td>
                 <td class="text-center">.emote list<br>.emote :pandiska:</td>
-                <td></td>
+                <td class="text-center">.emoji</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.bstats</code></td>
+                <td class="text-center"><code>.stats</code></td>
                 <td class="text-center">Informace o zatížení, využívané RAM, počet Discord serverů atd.</td>
-                <td class="text-center">.bstats</td>
+                <td class="text-center">.stats</td>
                 <td></td>
               </tr>
               <tr>
                 <td class="text-center"><code>.guildinfo</code></td>
                 <td class="text-center">Zobrazí informace o serveru, kde je příkaz napsán.</td>
                 <td class="text-center">.guildinfo</td>
-                <td></td>
+                <td class="text-center">.serverinfo</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.avatar</code></td>
                 <td class="text-center">Zobrazí avatara požadovaného uživatele.</td>
                 <td class="text-center">.avatar @Corgi</td>
                 <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.reminder</code></td>
+                <td class="text-center">Napiš Corgimu ať tě upozorní za tvůj nastavený čas.</td>
+                <td class="text-center">.reminder 2h | Upéct bábovku</td>
+                <td class="text-center">.rm, .upozorneni</td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.support</code></td>
+                <td class="text-center">Přímý odkaz na Discord server podpory pro Corgiho.</td>
+                <td class="text-center">.support</td>
+                <td class="text-center">.podpora</td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.donate</code></td>
+                <td class="text-center">Chceš podpořit Corgiho? Zde můžeš!</td>
+                <td class="text-center">.donate</td>
+                <td class="text-center"></td>
               </tr>
             </tbody>
           </table>
@@ -185,19 +203,13 @@
                 <td class="text-center"><code>.8ball [otázka]</code></td>
                 <td class="text-center">Zeptej se Corgiho zda s tebou souhlasí nebo ne!</td>
                 <td class="text-center">.8ball Jsem člověk?</td>
-                <td class="text-center">.8b</td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.game [nazev]</code></td>
-                <td class="text-center">Získání informací o požadované hře a její score.</td>
-                <td class="text-center">.game Minecraft</td>
-                <td></td>
+                <td class="text-center">.8b, .dotaz</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.fact</code></td>
                 <td class="text-center">Generování náhodných faktů všech kategorií.</td>
                 <td class="text-center">.fact</td>
-                <td></td>
+                <td class="text-center">.fakt</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.ttb [text]</code></td>
@@ -221,13 +233,25 @@
                 <td class="text-center"><code>.dog</code></td>
                 <td class="text-center">Vygeneruje náhodný obrázek se psem.</td>
                 <td class="text-center">.dog</td>
-                <td></td>
+                <td class="text-center">.pes, .rdog</td>
               </tr>
               <tr>
                 <td class="text-center"><code>.cat</code></td>
                 <td class="text-center">Vygeneruje náhodný obrázek se kočkou.</td>
                 <td class="text-center">.cat</td>
-                <td></td>
+                <td class="text-center">.kocka, .rcat</td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.choose</code></td>
+                <td class="text-center">Nevíš co? Nech Corgiho ať rozhodne za tebe.</td>
+                <td class="text-center">.choose čaj | kafe</td>
+                <td class="text-center">.volba</td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>.svatek</code></td>
+                <td class="text-center">Zjisti, kdo má dneska svátek v Česku a na Slovensku.</td>
+                <td class="text-center">.svatek</td>
+                <td class="text-center"></td>
               </tr>
             </tbody>
           </table>
@@ -272,7 +296,7 @@
               <tr>
                 <td class="text-center"><code>.giveaway [s] [výhra]</code></td>
                 <td class="text-center">Spustí v požadovaném channelu Giveaway. Ke konci se automaticky vyhodnotí. Lze vytvořit i Giveaway bez výhry.</td>
-                <td class="text-center">.giveway 1800 Ponožky</td>
+                <td class="text-center">.giveaway 1800 Ponožky</td>
                 <td></td>
               </tr>
               <tr>
