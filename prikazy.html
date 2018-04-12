@@ -79,7 +79,7 @@
 
     <!-- Main container -->
     <main class="main-content">
-
+      
 
       <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
@@ -89,8 +89,13 @@
       <section class="section bb-3">
         <div class="container">
 
+            <div class="alert alert-warning" role="alert">
+                <img draggable="false" style="width: 22px;" alt="⚠️" src="assets/emoji/warning.png">
+                <strong>| Upozornění!</strong> Prefix <code>c!</code> se dá změnit na vlastní pomocí příkazu <code>c!prefix</code>
+            </div>
+
           <h5>General příkazy</h5>
-          <p>Zde uvedené příkazy jsou dostupné pro všechny uživatele bez ohledu na rank a práva Discord serveru.</p>
+          <p>Zde uvedené příkazy jsou dostupné pro všechny uživatele bez ohledu na práva.</p>
 
           <table class="table table-bordered table-striped">
             <thead>
@@ -103,100 +108,88 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center"><code>.help [příkaz]</code></td>
-                <td class="text-center">Zobrazí základní nápovědu.</td>
-                <td class="text-center">.help<br>.help mcstatus</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.invite</code></td>
+                <td class="text-center"><code>c!invite</code></td>
                 <td class="text-center">Zobrazí přímý odkaz na pozvání bota na tvůj Discord server.</td>
-                <td class="text-center">.invite</td>
-                <td class="text-center">.pozvat</td>
+                <td class="text-center">c!invite</td>
+                <td class="text-center">c!pozvat</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.about</code></td>
-                <td class="text-center">Zobrazení základních informací a odkazů na Corgiho.</td>
-                <td class="text-center">.about</td>
-                <td class="text-center">.info, .binfo</td>
+                <td class="text-center"><code>c!about</code></td>
+                <td class="text-center">Zobrazení základních informací a odkazů.</td>
+                <td class="text-center">c!about</td>
+                <td class="text-center">c!info, c!binfo</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.ping</code></td>
+                <td class="text-center"><code>c!ping</code></td>
                 <td class="text-center">Zobrazí hodnotu odezvy, kterou má aktuálně bot.</td>
-                <td class="text-center">.ping</td>
+                <td class="text-center">c!ping</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.uptime</code></td>
-                <td class="text-center">Zobrazí seznam posledních změn v Corgim.</td>
-                <td class="text-center">.uptime</td>
+                <td class="text-center"><code>c!uptime</code></td>
+                <td class="text-center">Zobrazí dobu od spuštění.</td>
+                <td class="text-center">c!uptime</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.changelog</code></td>
-                <td class="text-center">Zobrazí přímý odkaz na Corgiho seznam změn.</td>
-                <td class="text-center">.changelog</td>
+                <td class="text-center"><code>c!changelog</code></td>
+                <td class="text-center">Zobrazí seznam posledních změn.</td>
+                <td class="text-center">c!changelog</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.user [@user]</code></td>
+                <td class="text-center"><code>c!userinfo [@user]</code></td>
                 <td class="text-center">Základní informace o uživateli.</td>
-                <td class="text-center">.user<br>.user @MrWakeCZ</td>
-                <td class="text-center">.ui</td>
+                <td class="text-center">c!user<br>c!user @MrWakeCZ</td>
+                <td class="text-center">c!ui</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.mcstatus</code></td>
-                <td class="text-center">Zobrazí aktuální stav Mojang serverů pro Minecraft servery.</td>
-                <td class="text-center">.mcstatus</td>
-                <td class="text-center">.mojang, .mcs</td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.emote [emote|id]</code></td>
+                <td class="text-center"><code>c!emote [emote|id]</code></td>
                 <td class="text-center">Zobrazí informace o požadovaném Emote.</td>
-                <td class="text-center">.emote list<br>.emote :pandiska:</td>
-                <td class="text-center">.emoji</td>
+                <td class="text-center">c!emote list<br>c!emote :pandiska:</td>
+                <td class="text-center">c!emoji</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.stats</code></td>
+                <td class="text-center"><code>c!stats</code></td>
                 <td class="text-center">Informace o zatížení, využívané RAM, počet Discord serverů atd.</td>
-                <td class="text-center">.stats</td>
+                <td class="text-center">c!stats</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.guildinfo</code></td>
+                <td class="text-center"><code>c!guildinfo</code></td>
                 <td class="text-center">Zobrazí informace o serveru, kde je příkaz napsán.</td>
-                <td class="text-center">.guildinfo</td>
-                <td class="text-center">.serverinfo</td>
+                <td class="text-center">c!guildinfo</td>
+                <td class="text-center">c!serverinfo</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.avatar</code></td>
+                <td class="text-center"><code>c!avatar</code></td>
                 <td class="text-center">Zobrazí avatara požadovaného uživatele.</td>
-                <td class="text-center">.avatar @Corgi</td>
+                <td class="text-center">c!avatar @Corgi</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.reminder</code></td>
+                <td class="text-center"><code>c!reminder</code></td>
                 <td class="text-center">Napiš Corgimu ať tě upozorní za tvůj nastavený čas.</td>
-                <td class="text-center">.reminder 2h | Upéct bábovku</td>
-                <td class="text-center">.rm, .upozorneni</td>
+                <td class="text-center">c!reminder 2h | Upéct bábovku</td>
+                <td class="text-center">c!rm, c!upozorneni</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.support</code></td>
-                <td class="text-center">Přímý odkaz na Discord server podpory pro Corgiho.</td>
-                <td class="text-center">.support</td>
-                <td class="text-center">.podpora</td>
+                <td class="text-center"><code>c!support</code></td>
+                <td class="text-center">Přímý odkaz na Discord server podpory.</td>
+                <td class="text-center">c!support</td>
+                <td class="text-center">c!podpora</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.donate</code></td>
+                <td class="text-center"><code>c!donate</code></td>
                 <td class="text-center">Chceš podpořit Corgiho? Zde můžeš!</td>
-                <td class="text-center">.donate</td>
+                <td class="text-center">c!donate</td>
                 <td class="text-center"></td>
               </tr>
             </tbody>
           </table>
 
           <h5>Fun příkazy</h5>
-          <p>Příkazy, které slouží k pobavení nebo jiným akcím na Discord serveru.</p>
+          <p>Příkazy, které slouží k pobavení nebo jiným akcím.</p>
 
           <table class="table table-bordered table-striped">
             <thead>
@@ -209,64 +202,70 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center"><code>.8ball [otázka]</code></td>
+                <td class="text-center"><code>c!8ball [otázka]</code></td>
                 <td class="text-center">Zeptej se Corgiho zda s tebou souhlasí nebo ne!</td>
-                <td class="text-center">.8ball Jsem člověk?</td>
-                <td class="text-center">.8b, .dotaz</td>
+                <td class="text-center">c!8ball Jsem člověk?</td>
+                <td class="text-center">c!8b, c!dotaz</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.fact</code></td>
+                <td class="text-center"><code>c!fact</code></td>
                 <td class="text-center">Generování náhodných faktů všech kategorií.</td>
-                <td class="text-center">.fact</td>
-                <td class="text-center">.fakt</td>
+                <td class="text-center">c!fact</td>
+                <td class="text-center">c!fakt</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.ttb [text]</code></td>
+                <td class="text-center"><code>c!ttb [text]</code></td>
                 <td class="text-center">Psaní pomocí bloků (Emote). Text musí být bez háčků a čárek.</td>
-                <td class="text-center">.ttb Ahoj jak se mas!</td>
+                <td class="text-center">c!ttb Ahoj jak se mas!</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.fullwidth [text]</code></td>
+                <td class="text-center"><code>c!fullwidth [text]</code></td>
                 <td class="text-center">Psaní pomocí větších mezer mezi písmeny.</td>
-                <td class="text-center">.fullwidth Ahoj jak se mas!</td>
-                <td class="text-center">.fw</td>
+                <td class="text-center">c!fullwidth Ahoj jak se mas!</td>
+                <td class="text-center">c!fw</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.meme</code></td>
+                <td class="text-center"><code>c!meme</code></td>
                 <td class="text-center">Generování víc jak 100 Meme obrázků.</td>
-                <td class="text-center">.meme Doge | Ahoj | Ahoj</td>
+                <td class="text-center">c!meme Doge | Ahoj | Ahoj</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.dog</code></td>
+                <td class="text-center"><code>c!dog</code></td>
                 <td class="text-center">Vygeneruje náhodný obrázek se psem.</td>
-                <td class="text-center">.dog</td>
-                <td class="text-center">.pes, .rdog</td>
+                <td class="text-center">c!dog</td>
+                <td class="text-center">c!pes, c!rdog</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.cat</code></td>
+                <td class="text-center"><code>c!cat</code></td>
                 <td class="text-center">Vygeneruje náhodný obrázek se kočkou.</td>
-                <td class="text-center">.cat</td>
-                <td class="text-center">.kocka, .rcat</td>
+                <td class="text-center">c!cat</td>
+                <td class="text-center">c!kocka, c!rcat</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.choose</code></td>
+                <td class="text-center"><code>c!choose</code></td>
                 <td class="text-center">Nevíš co? Nech Corgiho ať rozhodne za tebe.</td>
-                <td class="text-center">.choose čaj | kafe</td>
-                <td class="text-center">.volba</td>
+                <td class="text-center">c!choose čaj | kafe</td>
+                <td class="text-center">c!volba</td>
               </tr>
               <tr>
-                <td class="text-center"><code>.svatek</code></td>
+                <td class="text-center"><code>c!svatek</code></td>
                 <td class="text-center">Zjisti, kdo má dneska svátek v Česku a na Slovensku.</td>
-                <td class="text-center">.svatek</td>
+                <td class="text-center">c!svatek</td>
+                <td class="text-center"></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!weather</code></td>
+                <td class="text-center">Zjištění počasí pro určené město.</td>
+                <td class="text-center">c!weather Praha</td>
                 <td class="text-center"></td>
               </tr>
             </tbody>
           </table>
 
-          <h5>Moderation příkazy</h5>
-          <p>Příkazy určené pro moderátory Discord serverů.</p>
+          <h5>Games příkazy</h5>
+          <p>Zjištování statistik z her, statusu Mojang a Steam serverů.</p>
 
           <table class="table table-bordered table-striped">
             <thead>
@@ -279,63 +278,22 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center"><code>.roles</code></td>
-                <td class="text-center">Vypíše seznam všech rolí a jejich ID na serveru.</td>
-                <td class="text-center">.roles</td>
+                <td class="text-center"><code>c!help [příkaz]</code></td>
+                <td class="text-center">Zobrazí základní nápovědu.</td>
+                <td class="text-center">c!help<br>c!help mcstatus</td>
                 <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.perms [@uživatel]</code></td>
-                <td class="text-center">Zobrazí nápovědu jak nastavit základní práva na serveru pro Corgiho.</td>
-                <td class="text-center">.perms</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.archive [číslo]</code></td>
-                <td class="text-center">Zaarchivuje požadovaný počet zpráv (max. 100) a odešle je v souboru.</td>
-                <td class="text-center">.archive 20</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.purge [číslo]</code></td>
-                <td class="text-center">Smaže požadovaný počet zpráv.</td>
-                <td class="text-center">.purge 20</td>
-                <td class="text-center">.clean</td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.giveaway [s] [výhra]</code></td>
-                <td class="text-center">Spustí v požadovaném channelu Giveaway. Ke konci se automaticky vyhodnotí. Lze vytvořit i Giveaway bez výhry.</td>
-                <td class="text-center">.giveaway 1800 Ponožky</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.kick @user [@user]</code></td>
-                <td class="text-center">Vyhodí zvoleného uživatele z serveru. Maximálně lze vyhodit najednou až 20 uživatelů.</td>
-                <td class="text-center">.kick @MrWakeCZ</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.ban @user [@user]</code></td>
-                <td class="text-center">Zabanuje zvoleného uživatele. Stejně jako u kicku lze zabanovat až 20 uživatelů najednou.</td>
-                <td class="text-center">.ban @MrWakeCZ</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.roleinfo [ID]/[Název]</code></td>
-                <td class="text-center">Zobrazí informace o požadované roli - práva, řazení, seskupování atd.</td>
-                <td class="text-center">.roleinfo admin</td>
-                <td></td>
-              </tr>
+                </tr>
             </tbody>
           </table>
 
-          <h5>Admin příkazy</h5>
-          <p>Příkazy určené pro adminy/správce Discord serverů.</p>
+          <h5>Moderation příkazy</h5>
+          <p>Příkazy určené pro administraci serveru. Vyžadují navíc specifické práva.</p>
 
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
                 <th class="w-160 text-center">Příkaz</th>
+                <th class="w-160 text-center">Právo</th>
                 <th class="text-center">Popis</th>
                 <th class="text-center">Příklad</th>
                 <th class="text-center">Alias</th>
@@ -343,62 +301,80 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center"><code>.say [text]</code></td>
+                <td class="text-center"><code>c!roles</code><br></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Channel</span></td>
+                <td class="text-center">Vypíše seznam všech rolí a jejich ID na serveru.</td>
+                <td class="text-center">c!roles</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!archive [číslo]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Channel</span></td>
+                <td class="text-center">Zaarchivuje požadovaný počet zpráv (max. 100) a odešle je v souboru.</td>
+                <td class="text-center">c!archive 20</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!purge [číslo]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Messages</span></td>
+                <td class="text-center">Smaže požadovaný počet zpráv.</td>
+                <td class="text-center">c!purge 20</td>
+                <td class="text-center">c!clean</td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!giveaway [s] [výhra]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Channel</span></td>
+                <td class="text-center">Spustí v požadovaném channelu Giveaway. Ke konci se automaticky vyhodnotí. Lze vytvořit i Giveaway bez výhry.</td>
+                <td class="text-center">c!giveaway 1800 Ponožky</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!kick @user [@user]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Kick Members</span></td>
+                <td class="text-center">Vyhodí zvoleného uživatele z serveru. Maximálně lze vyhodit najednou až 20 uživatelů.</td>
+                <td class="text-center">c!kick @MrWakeCZ</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!ban @user [@user]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Ban Members</span></td>
+                <td class="text-center">Zabanuje zvoleného uživatele. Stejně jako u kicku lze zabanovat až 20 uživatelů najednou.</td>
+                <td class="text-center">c!ban @MrWakeCZ</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!roleinfo [ID]/[Název]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Server</span></td>
+                <td class="text-center">Zobrazí informace o požadované roli - práva, řazení, seskupování atd.</td>
+                <td class="text-center">c!roleinfo admin</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center"><code>c!say [text]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Channel</span></td>
                 <td class="text-center">Napíše zprávu jako Corgi.</td>
-                <td class="text-center">.say Ahoj</td>
+                <td class="text-center">c!say Ahoj</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.prefix [code]</code></td>
+                <td class="text-center"><code>c!prefix [code]</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Server</span></td>
                 <td class="text-center">Nastavení vlastního prefixu pro daný server.</td>
-                <td class="text-center">.prefix ?</td>
+                <td class="text-center">c!prefix ?</td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.ignore</code></td>
+                <td class="text-center"><code>c!ignore</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Channel</span></td>
                 <td class="text-center">Nastavení zda má Corgi ignorovat veškeré své příkazy v channelu.</td>
                 <td class="text-center"></td>
                 <td></td>
               </tr>
               <tr>
-                <td class="text-center"><code>.leaveguild</code></td>
+                <td class="text-center"><code>c!leaveguild</code></td>
+                <td class="text-center"><span class="bg-pale-danger d-inline-block text-center p-1 w-140">Manage Server</span></td>
                 <td class="text-center">Příkaz na vyhození Corgiho :(</td>
                 <td class="text-center"></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-
-
-          <h5>Owner příkazy</h5>
-          <p>Příkazy, které může používat pouze majitel Corgiho.</p>
-
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th class="w-160 text-center">Příkaz</th>
-                <th class="text-center">Popis</th>
-                <th class="text-center">Příklad</th>
-                <th class="text-center">Alias</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center"><code>.stop</code></td>
-                <td class="text-center">Zastaví Corgiho nebo provede restart.</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.guildlist</code></td>
-                <td class="text-center">Zobrazí seznam Guild ve kterých Corgi je.</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="text-center"><code>.eval</code></td>
-                <td class="text-center">Interní příkaz na provádění/testování funkcí.</td>
-                <td></td>
                 <td></td>
               </tr>
             </tbody>
